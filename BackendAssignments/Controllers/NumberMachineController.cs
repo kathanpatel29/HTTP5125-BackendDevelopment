@@ -9,6 +9,23 @@ namespace BackendAssignments.Controllers
 {
     public class NumberMachineController : ApiController
     {
+        /// <summary>
+        /// Taking a number and performing mathematical operations
+        /// </summary>
+        /// <param int="id"></param>
+        /// <example>http://localhost:55731/api/numbermachine/10<example>
+        /// <returns>
+        /// Addition (doubled): 20, Subtraction: 0, Multiplication (squared): 100, Division (halved): 5
+        /// </returns>
+        /// <example>http://localhost:55731/api/numbermachine/10</example>
+        /// <returns>
+        /// Addition (doubled): -10, Subtraction: 0, Multiplication (squared): 25, Division (halved): -2
+        /// </returns>
+        /// <example>http://localhost:55731/api/numbermachine/10</example>
+        /// <returns>
+        /// Addition (doubled): 60, Subtraction: 0, Multiplication (squared): 900, Division (halved): 15
+        /// </returns>
+
         public string Get(int id)
         {
             //Addition
